@@ -13,7 +13,7 @@ function App() {
   const { pathname } = useLocation()
   const navigate = useNavigate()
   useEffect(() => {
-    navigate('/multi-step-form/step1')
+    navigate('/multi-step-form/step3')
  }, []);
   return (
     <Routes>

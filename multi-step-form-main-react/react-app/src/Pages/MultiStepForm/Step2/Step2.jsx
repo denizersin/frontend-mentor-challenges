@@ -1,16 +1,13 @@
 import React from 'react'
 import { useLocation, useNavigate, useNavigation } from 'react-router-dom'
 import { ErrorMessage, Field, Form, Formik, useFormik } from 'formik';
-import * as Yup from 'yup';
 import FormErrorMsg from '../FormErrorMsg';
 import { useQuery, useQueryClient } from 'react-query';
-import { Switch } from 'radix-ui';
 import SwitchDemo from '../../components/Switch';
 import arcadeSvg from "../../../assets/icon-arcade.svg"
 import advancedSvg from "../../../assets/icon-advanced.svg"
 import proSvg from "../../../assets/icon-pro.svg"
 import classNames from 'classnames';
-// import img from "@/src/assets/image.png"
 export const plans = [
     {
         name: 'arcade',

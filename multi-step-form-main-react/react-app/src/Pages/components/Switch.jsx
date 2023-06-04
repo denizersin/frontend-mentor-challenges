@@ -1,7 +1,8 @@
 import React from 'react';
 import * as Switch from '@radix-ui/react-switch';
 import { useField } from 'formik';
-import * as cs from 'classnames';
+import { cs } from '../../App';
+
 const SwitchDemo = (props) => {
 
     const [field, meta, helpers] = useField(props.name);

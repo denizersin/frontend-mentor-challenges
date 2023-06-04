@@ -8,13 +8,14 @@ import Step3 from './Pages/MultiStepForm/Step3/Step3'
 import Step4 from './Pages/MultiStepForm/Step4/Step4'
 import Success from './Pages/MultiStepForm/Success'
 
+import classNames from 'classnames'
+export const cs = classNames
+
 function App() {
-  const [count, setCount] = useState(0)
-  const { pathname } = useLocation()
   const navigate = useNavigate()
   useEffect(() => {
     navigate('/multi-step-form/step3')
- }, []);
+  }, []);
   return (
     <Routes>
       <Route path='/multi-step-form' element={<MultiStepForm />}>

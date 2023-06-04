@@ -1,13 +1,13 @@
 import React from 'react'
-import { useLocation, useNavigate, useNavigation } from 'react-router-dom'
-import { ErrorMessage, Field, Form, Formik, useFormik } from 'formik';
+import { useLocation, useNavigate } from 'react-router-dom'
+import { Form, Formik } from 'formik';
 import FormErrorMsg from '../FormErrorMsg';
 import { useQuery, useQueryClient } from 'react-query';
 import SwitchDemo from '../../components/Switch';
 import arcadeSvg from "../../../assets/icon-arcade.svg"
 import advancedSvg from "../../../assets/icon-advanced.svg"
 import proSvg from "../../../assets/icon-pro.svg"
-import classNames from 'classnames';
+import { cs } from '../../../App';
 export const plans = [
     {
         name: 'arcade',
@@ -80,7 +80,7 @@ export default function Step2() {
                                                 return (
                                                     <div key={index}
                                                         onClick={() => { formik.setFieldValue('type', plan.name) }}
-                                                        className={classNames(`plan-card flex flex-col w-[120px] p-3 rounded-lg border-2 cursor-pointer max-sm:flex-row max-sm:w-full max-sm:gap-4`,
+                                                        className={cs(`plan-card flex flex-col w-[120px] p-3 rounded-lg border-2 cursor-pointer max-sm:flex-row max-sm:w-full max-sm:gap-4`,
                                                             { 'border-black': isSelected }
                                                         )}>
                                                         <div className="c1 h-16">
@@ -88,7 +88,7 @@ export default function Step2() {
                                                         </div>
                                                         <div className="c2">
                                                             <h5 className=''>{plan.name}</h5>
-                                                            <p className='text-gray-400'>${selectedDuration === 'monthly' ? plan.monthPrice +'/mo': plan.yearPrice+'/yr'}</p>
+                                                            <p className='text-gray-400'>${selectedDuration === 'monthly' ? plan.monthPrice + '/mo' : plan.yearPrice + '/yr'}</p>
                                                             <span className='text-[12px]'>{selectedDuration == 'yearly' && "2 month free"}</span>
                                                         </div>
                                                     </div>
@@ -98,7 +98,7 @@ export default function Step2() {
                                         }
                                     </div>
 
-                                    <SwitchDemo name="duration"  />
+                                    <SwitchDemo name="duration" />
                                 </div>
 
                                 <div className="r2  nav w-full flex flex-row justify-around h-[60px]" >

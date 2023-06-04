@@ -1,18 +1,12 @@
 import React from 'react'
-import { useLocation, useNavigate, useNavigation } from 'react-router-dom'
-import { ErrorMessage, Field, Form, Formik, useFormik } from 'formik';
-import * as Yup from 'yup';
-import FormErrorMsg from '../FormErrorMsg';
+import { useLocation, useNavigate } from 'react-router-dom'
+import { Form, Formik } from 'formik';
 import { useQuery, useQueryClient } from 'react-query';
-import { Switch } from 'radix-ui';
-import SwitchDemo from '../../components/Switch';
-import arcadeSvg from "../../../assets/icon-arcade.svg"
-import advancedSvg from "../../../assets/icon-advanced.svg"
-import proSvg from "../../../assets/icon-pro.svg"
-import classNames from 'classnames';
 import checkedSvg from "../../../assets/icon-checkmark.svg"
 
 import { addOns } from '../MultiStepForm';
+import { cs } from '../../../App';
+
 // import img from "@/src/assets/image.png"
 addOns
 console.log(addOns)
@@ -74,9 +68,9 @@ export default function Step3() {
                                             }
                                             return (
                                                 <div onClick={handleSelect} key={index} className={
-                                                    classNames("r1 flex rounded-lg items-center border-2 gap-2 p-4 cursor-pointer", { "border-purple-900": isSelected })
+                                                    cs("r1 flex rounded-lg items-center border-2 gap-2 p-4 cursor-pointer", { "border-purple-900": isSelected })
                                                 }>
-                                                    <div className={classNames("c c1 check w-6 h-6 border flex justify-center items-center rounded-md",
+                                                    <div className={cs("c c1 check w-6 h-6 border flex justify-center items-center rounded-md",
                                                         { "bg-purple-600": isSelected }
                                                     )}>
                                                         <img src={checkedSvg} className='w-4' alt="" />
@@ -95,7 +89,7 @@ export default function Step3() {
                                 </div>
 
                                 <div className="r2 nav w-full flex flex-row justify-around h-[60px]" >
-                                <button
+                                    <button
                                         onClick={() => { navigate('/multi-step-form/step2'); }}
                                         className='btn1 border-red-700  text-gray-600  hover:bg-gray-400/75 border border-2'
                                         disabled={pathname.includes('step1')}>Go Back</button>

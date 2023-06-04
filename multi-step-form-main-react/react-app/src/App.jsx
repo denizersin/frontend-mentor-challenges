@@ -14,7 +14,7 @@ export const cs = classNames
 function App() {
   const navigate = useNavigate()
   useEffect(() => {
-    navigate('/multi-step-form/step3')
+    navigate('/multi-step-form/step1')
   }, []);
   return (
     <Routes>

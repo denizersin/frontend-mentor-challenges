@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="max-sm:text-[14px]">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./output.css">
+  <title>Vite App</title>
+</head>
+
+<body>
+
+
+
+  <div class="page w-full h-[100vh] flex items-center justify-center bg-slate-300 ">
+    <div class="container w-[630px] h-[450px] flex max-sm:flex-col max-sm:w-full max-sm:h-full bg-white rounded-3xl">
+      <div class="c1 w-[50%] h-full max-sm:w-full max-sm:h-[330px] shrink-0  ">
+        <div
+          class="con w-full h-full flex flex-col items-center p-8  bg-gradient rounded-3xl max-sm:rounded-t-none text-white">
+
+          <div class="r r1 mb-6  text-center text-lg text-white/70 font-bold">
+            <span>Your Result</span>
+          </div>
+          <div
+            class="r r2 flex flex-col w-[150px] h-[150px] shrink-0 max-sm:h-[110px] max-sm:w-[110px] mb-8   flex justify-center items-center  rounded-full color-primary">
+            <span class="text-5xl font-bold">76</span>
+            <span class="text-white/40 font-bold">of 100</span>
+          </div>
+
+          <div class="r r3 mb-4  text-3xl font-bold">
+            <span>Great</span>
+          </div>
+          <div class="r r4 text-center text-white/80  text-lg">
+            <span>You scored higher than 65% of the people who have taken these tests.</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="c2 w-[50%] h-full max-sm:w-full  max-sm:grow">
+        <div class="con w-full h-full flex flex-col p-8 border-red-500 ">
+          <div class="r r1 mb-6 text-lg font-bold">
+            <span>Summary</span>
+          </div>
+          <div class="r r2  flex flex-col gap-3">
+
+            <div class="r r1 h-12 px-2 flex items-center border rounded-lg bg-red-100/40">
+              <div class="c c1 mr-2 ">
+                <img src="./images/icon-reaction.svg" alt="">
+              </div>
+              <div class="c c2 grow text-red-500">Reaction</div>
+              <div class="c c3 w-16 "><span class="font-bold">80</span> <span class="text-gray-400">/ 100</span> </div>
+            </div>
+
+
+            <div class="r r1 h-12 px-2 flex items-center border rounded-lg bg-yellow-100/40">
+              <div class="c c1 mr-2 ">
+                <img src="./images/icon-memory.svg" alt="">
+              </div>
+              <div class="c c2 grow text-yellow-600">Memory</div>
+              <div class="c c3 w-16 "><span class="font-bold">92</span> <span class="text-gray-400">/ 100</span> </div>
+            </div>
+
+            <div class="r r1 h-12 px-2 flex items-center border rounded-lg bg-green-100/40">
+              <div class="c c1 mr-2 ">
+                <img src="./images/icon-verbal.svg" alt="">
+              </div>
+              <div class="c c2 grow text-green-500">Verbal</div>
+              <div class="c c3 w-16 "><span class="font-bold">61</span> <span class="text-gray-400">/ 100</span> </div>
+            </div>
+
+
+            <div class="r r1 h-12 px-2 flex items-center border rounded-lg bg-purple-100/40">
+              <div class="c c1 mr-2 ">
+                <img src="./images/icon-visual.svg" alt="">
+              </div>
+              <div class="c c2 grow text-purple-500">Visual</div>
+              <div class="c c3 w-16 "><span class="font-bold">72</span> <span class="text-gray-400">/ 100</span> </div>
+            </div>
+
+
+
+          </div>
+          <div class="r r3 mt-8">
+            <button class="w-full py-3 bg-slate-800 text-white rounded-3xl hover:bg-primary">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script type=" module" src="/main.js">
+    </script>
+</body>
+
+</html>

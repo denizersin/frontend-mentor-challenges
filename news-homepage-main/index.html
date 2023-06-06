@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/output.css">
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Home
+  New
+  Popular
+  Trending
+  Categories
+
+  The Bright Future of Web 3.0?
+
+  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+  But is it really fulfilling its promise?
+
+  Read more
+
+  New 
+
+  Hydrogen VS Electric Cars
+  Will hydrogen-fueled cars ever catch up to EVs?
+
+  The Downsides of AI Artistry
+  What are the possible adverse effects of on-demand AI image generation?
+
+  Is VC Funding Drying Up?
+  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+
+  01
+  Reviving Retro PCs
+  What happens when old PCs are given modern upgrades?
+
+  02
+  Top 10 Laptops of 2022
+  Our best picks for various needs and budgets.
+
+  03
+  The Growth of Gaming
+  How the pandemic has sparked fresh opportunities.
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <!-- flex-col icin h-60 60px yerine max-content oluyor her zaman min-h mi kullanmaliyiz? -->
+  <!-- min-w absolute olmayan butun parentlarin width'ini arttirir -->
+  <div class="page w-full h-[100vh] flex justify-center overflow-y-auto pt-6  max-sm:pt-0 font-regular">
+
+    <div class="container max-w-[1200px]  flex flex-col max-sm:p-2">
+      <div class="sec1 nav w-full min-h-[120px] flex justify-between items-center">
+        <div class="c1 icon">
+          <img src="/assets/images/logo.svg" class="w-[50px]" alt="">
+        </div>
+        <div class="c2 nav flex gap-3 w-max max-sm:hidden ">
+          <div class="c1 h-max p-1 hover:text-orange-500 cursor-pointer font-bold1 text-gray-400 text-sm">Home</div>
+          <div class="c2 h-max p-1 hover:text-orange-500 cursor-pointer font-bold1 text-gray-400 text-sm">New</div>
+          <div class="c3 h-max p-1 hover:text-orange-500 cursor-pointer font-bold1 text-gray-400 text-sm">Popular</div>
+          <div class="c4 h-max p-1 hover:text-orange-500 cursor-pointer font-bold1 text-gray-400 text-sm">Trending</div>
+          <div class="c5 h-max p-1 hover:text-orange-500 cursor-pointer font-bold1 text-gray-400 text-sm">Categories
+          </div>
+        </div>
+        <div class="c2 hidden max-sm:block">
+          <img id="menu-btn" class="cursor-pointer" src="assets/images/icon-menu.svg" alt="">
+        </div>
+
+
+
+
+      </div>
+      <div class="sec2 w-full h-[700px] max-sm:h-auto ">
+        <div class="wh-full flex justify-between  max-sm:flex-col  max-sm:gap-5">
+          <div class="c1 max-w-[750px] max-sm:max-w-none">
+            <div class="r1 w-full h-[300px] max-sm:h-[250px]   flex items-start justify-center overflow-hidden border">
+              <img src="/assets/images/image-web-3-desktop.jpg" class="max-w-full overflow-clip max-sm:hidden" alt="">
+              <img src="/assets/images/image-web-3-mobile.jpg" class="max-w-full overflow-clip hidden max-sm:block"
+                alt="">
+            </div>
+            <div class="r2 flex w-full h-[300px] pt-8 max-sm:h-auto gap-10 max-sm:gap-3 max-sm:flex-col ">
+              <div class="c1 w-[55%] max-sm:w-full">
+                <span class="text-4xl font-bold1">The Bright Future of Web 3.0?</span>
+              </div>
+              <div class="c2 flex flex-col w-1/2  max-sm:w-full max-sm:gap-3  justify-between ">
+                <div class="r"> We dive into the next evolution of the web that claims to put the power of the
+                  platforms
+                  back into the hands of the people.
+                  But is it really fulfilling its promise?</div>
+                <div class="r">
+                  <button class="w-max px-6 py-3 bg-red-500 text-white font-bold1 text-sm">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c2 new max-w-[350px] p-3 bg-black text-yellow-50 flex flex-col max-sm:max-w-none">
+            <span class="text-4xl font-bold1 text-orange-300 pb-4">New</span>
+
+            <div class="new1 border-b border-gray-200 pb-4 ">
+              <div class="text-md font-bold1 pb-2">Hydrogen VS Electric Cars</div>
+              <div class=" text-gray-300">Will hydrogen-fueled cars ever catch up to EVs?</div>
+            </div>
+            <div class="new1 border-b border-gray-200 pb-4 ">
+              <div class="text-md font-bold1 pb-2">The Downsides of AI Artistry </div>
+              <div class=" text-gray-300">
+                What are the possible adverse effects of on-demand AI image generation?</div>
+            </div>
+            <div class="new1 pb-4 ">
+              <div class="text-md font-bold1 pb-2">Is VC Funding Drying Up?</div>
+              <div class=" text-gray-300">
+                Private funding by VC firms is down 50% YOY. We take a look at what that means</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sec3 w-full mt-10 pb-6 flex gap-2  max-sm:flex-col">
+
+        <div class="c c1 flex max-w-[400px] gap-3">
+
+          <div class="c1 min-w-[200px]">
+            <img src="/assets/images/image-retro-pcs.jpg" class="max-w-full h-full" alt="">
+          </div>
+
+          <div class="c2 flex flex-col gap-1 font-bold1">
+            <div class="number text-4xl text-gray-400 font-bold1">01</div>
+            <div class="header text-md font-bold1">Reviving Retro PCs</div>
+            <div class="content font-regular text-gray-500 tex-[14px]">
+              What happens when old PCs are given modern upgrades?</div>
+          </div>
+
+
+        </div>
+
+
+
+        <div class="c c1 flex max-w-[400px] gap-3">
+
+          <div class="c1 min-w-[200px] min-h-[250px]">
+            <img src="/assets/images/image-top-laptops.jpg" class="max-w-full h-full" alt="">
+          </div>
+
+          <div class="c2 flex flex-col gap-1 font-bold1">
+            <div class="number text-4xl text-gray-400 font-bold1">02</div>
+            <div class="header text-md font-bold1">Top 10 Laptops of 2022</div>
+            <div class="content font-regular text-gray-500 tex-[14px]">
+
+              Our best picks for various needs and budgets.
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <div class="c c1 flex max-w-[400px] gap-3">
+
+          <div class="c1 min-w-[200px]">
+            <img src="/assets/images/image-gaming-growth.jpg" class="max-w-full h-full" alt="">
+          </div>
+
+          <div class="c2 flex flex-col gap-1 font-bold1">
+            <div class="number text-4xl text-gray-400 font-bold1">03</div>
+            <div class="header text-md font-bold1">The Growth of Gaming </div>
+            <div class="content font-regular text-gray-500 tex-[14px]">
+              How the pandemic has sparked fresh opportunities.
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+
+      </div>
+
+
+      <div id="mobile-nav"
+        class=" hidden flex mobile-nav fixed w-full h-[100vh] top-0 left-0 justify-end bg-gray-600/75">
+        <img id="close-btn" src="/assets/images/icon-menu-close.svg" class="fixed top-3 right-3 bg-white cursor-pointer"
+          alt="">
+        <div class="c2 flex flex-col w-2/3 gap-3  pl-2 pt-40 bg-white">
+          <div class="c1 h-max p-1 hover:text-orange-500 cursor-pointer   text-sm">Home</div>
+          <div class="c2 h-max p-1 hover:text-orange-500 cursor-pointer   text-sm">New</div>
+          <div class="c3 h-max p-1 hover:text-orange-500 cursor-pointer   text-sm">Popular
+          </div>
+          <div class="c4 h-max p-1 hover:text-orange-500 cursor-pointer   text-sm">Trending
+          </div>
+          <div class="c5 h-max p-1 hover:text-orange-500 cursor-pointer   text-sm">Categories
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+      const mobileMenu = document.getElementById('mobile-nav');
+      const menuBtn = document.getElementById('menu-btn');
+      const closeBtn = document.getElementById('close-btn');
+
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('hidden');
+      })
+      closeBtn.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      })
+      mobileMenu.addEventListener('click', (e) => {
+        if (e.target.id == 'mobile-nav') {
+          mobileMenu.classList.add('hidden');
+        }
+      })
+
+    </script>
+
+</body>
+
+</html>

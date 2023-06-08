@@ -17,7 +17,7 @@ const SwitchDemo = (props) => {
                 } htmlFor="airplane-mode" >
                     Monthly
                 </label>
-                <Switch.Root onCheckedChange={(checked) => {
+                <Switch.Root checked={field.value=='yearly'} onCheckedChange={(checked) => {
                     helpers.setValue(checked ? 'yearly' : 'monthly')
                 }} className="SwitchRoot" id="airplane-mode">
                     <Switch.Thumb className="SwitchThumb" />

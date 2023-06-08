@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" class="max-sm:text-[14px]">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/dist/output.css">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Collections
+  Men
+  Women
+  About
+  Contact
+
+  Sneaker Company
+
+  Fall Limited Edition Sneakers
+
+  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.
+
+  $125.00
+  50%
+  $250.00
+
+  0
+  Add to cart
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <!-- min-h 600 h-auto ise h auto oldugu icin child h-% calismaz! -->
+
+  <div class="container  w-[1000px] m-auto border max-sm:w-full">
+    <div class="pt-3 max-sm:pt-1 border">
+      <div class="container w-full">
+
+        <div class="sec1 nav h-[75px] border">
+          <div class="wh-full flex items-center justify-between">
+            <div class="c1 flex h-full  items-center text-sm">
+              <div id="menu-btn" class="c1 hidden mr-3 max-sm:block cursor-pointer"><img src="/images/icon-menu.svg"
+                  alt=""></div>
+              <div class="c2 mr-6"><img src="/images/logo.svg" alt=""></div>
+              <div class="menus flex h-full text-gray-500 items-center max-sm:hidden gap-2">
+                <div
+                  class="c3 min-w-[70px] p-3 h-full flex items-center hover:border-b-4 hover:text-gray-400 border-orange-400 cursor-pointer  ">
+                  Collections</div>
+                <div
+                  class="c4 min-w-[70px] p-3 h-full flex items-center hover:border-b-4 hover:text-gray-400 border-orange-400 cursor-pointer">
+                  Men</div>
+                <div
+                  class="c5 min-w-[70px] p-3 h-full flex items-center hover:border-b-4 hover:text-gray-400 border-orange-400 cursor-pointer">
+                  About</div>
+                <div
+                  class="c6 min-w-[70px] p-3 h-full flex items-center hover:border-b-4 hover:text-gray-400 border-orange-400 cursor-pointer">
+                  Contact</div>
+              </div>
+              <div class="c7 p-3 hover:bg-slate-300"></div>
+            </div>
+            <div class="c2 flex items-center gap-8  " name="box and profile ">
+              <div id="cart-icon" class="c1 relative cursor-pointer"><img src="/images/icon-cart.svg" alt="">
+                <div id="cart-count"
+                  class="hidden absolute w-[10px] h-[10px] right-0 top-0 bg-orange-700 text-white text-[8px] flex items-start justify-center rounded-full">
+                </div>
+                <div id="cart-box" class="hidden absolute-card bg-white absolute left-[-150px] top-[50px] w-[330px] min-h-[200px] h-[200px] border text-sm
+                  max-sm:fixed max-sm:w-full z-10 max-sm:left-0 max-sm:top-[85px] max-sm:text-lg ">
+                  <div class="wh-full  p-5 flex flex-col">
+                    <div class="r pb-4 border-b-2  font-bold">Card</div>
+                    <div id="non-empty-product" class="hidden r non empty pt-2 ">
+                      <div class="r flex items-center">
+                        <div class="c h-[50px]"><img class="max-h-full" src="/images/image-product-1-thumbnail.jpg"
+                            alt=""></div>
+                        <div class="c ml-2  p-2 grow">
+                          <div class="r ">Fall Limited Edition Sneakers</div>
+                          <div class="r">$125 x 3 <span class="font-bold">$375.000</span></div>
+                        </div>
+                        <div id="delete-from-cart" class="c"> <img src="/images/icon-delete.svg" alt=""></div>
+                      </div>
+                      <div class="r mt-2"><button
+                          class="w-full p-3 text-sm rounded-xl  bg-orange-500 text-white">Checkout</button></div>
+                    </div>
+                    <div id="empty-product" class="r empty grow flex items-center justify-center text-sm">Your cart is
+                      empty.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="c2 w-[50px] max-sm:w-[35px]"><img src="/images/image-avatar.png"
+                  class="hover:border-2 border-orange-600 rounded-full" alt=""></div>
+            </div>
+          </div>
+        </div>
+        <div class="sec2 wh-full border">
+          <div class="min-h-[600px] border-green-500">
+            <div class="min-h-[600px] flex justify-center items-center max-sm:flex-col max-sm:items-start ">
+              <div
+                class="c1 w-[350px] h-[500px] max-sm:h-[300px] overflow-hidden border mr-20  max-sm:w-full max-sm:mr-0 relative">
+                <div
+                  class="left hidden max-sm:flex absolute left-0 top-1/2 w-8 h-8  items-center justify-center   bg-white rounded-full">
+                  <img src="/images/icon-previous.svg" class="w-3" alt="">
+                </div>
+                <div
+                  class="right hidden max-sm:flex absolute right-0 top-1/2 w-8 h-8  items-center justify-center   bg-white rounded-full">
+                  <img src="/images/icon-next.svg" class="w-3" alt="">
+                </div>
+                <div class="r r1 w-max-full"><img class="rounded-xl max-sm:rounded-none"
+                    src="/images/image-product-1.jpg" alt=""></div>
+                <div class="r r2 flex gap-3 mt-6 max-sm:hidden" id="toggle-modal">
+                  <div class="c c1 w-[80px]  " id="thumbnail1">
+                    <img class="rounded-xl cursor-pointer hover:opacity-75 border-4 border-orange-700 opacity-70" src="/images/image-product-1-thumbnail.jpg" alt="">
+                  </div>
+                  <div class="c c1 w-[80px]">
+                    <img class="rounded-xl cursor-pointer hover:opacity-75" src="/images/image-product-2-thumbnail.jpg" alt="">
+                  </div>
+                  <div class="c c1 w-[80px]">
+                    <img class="rounded-xl cursor-pointer hover:opacity-75" src="/images/image-product-3-thumbnail.jpg" alt="">
+                  </div>
+                  <div class="c c1 w-[80px]">
+                    <img class="rounded-xl cursor-pointer hover:opacity-75" src="/images/image-product-4-thumbnail.jpg" alt="">
+                  </div>
+
+                </div>
+              </div>
+              <div class="c2 w-[400px] h-[350px]  border max-sm:h-auto  max-sm:w-full max-sm:p-3">
+                <div class="r r1 text-orange-600">Sneaker Company</div>
+                <div class="r r2 text-4xl font-bold mt-2">Fall Limited Edition Sneakers</div>
+                <div class="r r3 text-sm text-gray-500 mt-6 max-sm:mt-4">
+                  These low-profile sneakers are your perfect casual wear companion. Featuring a
+                  durable rubber outer sole, they’ll withstand everything the weather can offer.
+                </div>
+                <div class="r r4 flex items-center mt-3 ">
+                  <div class="c c1 mr-4 text-2xl font-bold">$125.00</div>
+                  <div class="c c2"><span class="text-sm text-orange-600 bg-orange-300 p-1 ">50%</span></div>
+                </div>
+                <div class="r r5 line-through tex-sm text-gray-400">$250.00</div>
+                <div class="r r6 flex justify-between mt-6 max-sm:mt-2 max-sm:flex-col">
+                  <div class="c1 flex items-center bg-orange-100/60 h-12">
+                    <div id="minus-btn"
+                      class="c c1 w-16 max-sm:w-full    hover:bg-gray-400 h-full flex justify-center items-center">
+                      <img class="w-4 h-max" src="/images/icon-minus.svg" alt="">
+                    </div>
+                    <div id="no-product" class="c c3">0</div>
+                    <div id="plus-btn"
+                      class="c c1 w-16 max-sm:w-full    hover:bg-gray-400 h-full flex justify-center items-center">
+                      <img class="w-4 h-max" src="/images/icon-plus.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="c2 flex max-sm:mt-2"> <button id="add-to-cart"
+                      class="w-max max-sm:w-full max-sm:0 flex items-center justify-center   h-max flex border px-16 py-3 max-sm:p-2 bg-orange-500 text-white active:opa">
+                      <img src="/images/icon-cart.svg" class="text-white mr-2" alt=""> Add to cart</button> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="product-modal"
+    class="flex hidden product-modal fixed w-full h-[100vh] left-0 top-0 bg-black/80  items-center justify-center">
+    <div class="w-[450px]">
+      <div id="close-product-modal" class="r py-4 cursor-pointer hover:opacity-75 flex justify-end"><img
+          src="/images/icon-close.svg" alt="">
+      </div>
+      <div class="r relative "><img class="max-w-full rounded-lg" src="/images/image-product-1.jpg" alt="">
+        <div
+          class="arrow-left absolute left-[-25px] top-1/2 w-[50px] h-[50px] rounded-full bg-white flex justify-center items-center">
+          <img src="/images/icon-previous.svg" alt="">
+        </div>
+        <div
+          class="arrow-right absolute right-[-25px] top-1/2 w-[50px] h-[50px] rounded-full bg-white flex justify-center items-center">
+          <img src="/images/icon-next.svg" alt="">
+        </div>
+      </div>
+      <div class="r flex gap-6 mt-6 justify-center">
+        <div class="c c1 w-[60px]  "><img src="/images/image-product-1-thumbnail.jpg"
+            class=" rounded-lg hover:opacity-75 cursor-pointer max-w-full" alt=""></div>
+        <div class="c c2 w-[60px]  "><img src="/images/image-product-2-thumbnail.jpg"
+            class=" rounded-lg hover:opacity-75 cursor-pointer max-w-full" alt=""></div>
+        <div class="c c3 w-[60px]  "><img src="/images/image-product-3-thumbnail.jpg"
+            class=" rounded-lg hover:opacity-75 cursor-pointer max-w-full" alt=""></div>
+        <div class="c c4 w-[60px]  "><img src="/images/image-product-4-thumbnail.jpg"
+            class=" rounded-lg hover:opacity-75 cursor-pointer max-w-full" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-modal" class="hidden mobile-modal fixed w-full h-[100vh] bg-black/80 left-0 top-0">
+    <div class="r p-5 w-1/2 h-full flex flex-col gap-4 bg-white text-lg ">
+      <div id="close-btn" class="r"><img src="/images/icon-close.svg" class="cursor-pointer" alt=""></div>
+      <div class="r hover:opacity-70 cursor-pointer mt-3">Collections</div>
+      <div class="r hover:opacity-70 cursor-pointer">Men</div>
+      <div class="r hover:opacity-70 cursor-pointer">Women</div>
+      <div class="r hover:opacity-70 cursor-pointer">About</div>
+      <div class="r hover:opacity-70 cursor-pointer">Contact</div>
+    </div>
+  </div>
+
+
+
+
+  <script>
+    const mobileMenu = document.getElementById('mobile-modal');
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-btn');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+    })
+    closeBtn.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+    })
+    mobileMenu.addEventListener('click', (e) => {
+      if (e.target.id == 'mobile-nav') {
+        mobileMenu.classList.add('hidden');
+      }
+    })
+
+
+    const no_producct = document.getElementById('no-product');
+    const plusBtn = document.getElementById('plus-btn');
+    const minusBtn = document.getElementById('minus-btn');
+    let count = 0;
+    plusBtn.addEventListener('click', () => {
+      count++;
+      no_producct.innerHTML = count;
+    })
+    minusBtn.addEventListener('click', () => {
+      if (count > 0) {
+        count--;
+        no_producct.innerHTML = count;
+      }
+
+    })
+
+    const cartCount = document.getElementById('cart-count');
+    const cartBox = document.getElementById('cart-box');
+    const cartIcon = document.getElementById('cart-icon');
+    const deleteFromCart = document.getElementById('delete-from-cart');
+
+    deleteFromCart.addEventListener('click', () => {
+      nonEmptyProduct.classList.add('hidden');
+      emptyProduct.classList.remove('hidden');
+      cartCount.classList.add('hidden');
+      cartBox.classList.add('hidden');
+    })
+
+    cartIcon.addEventListener('click', () => {
+      if (cartBox.classList.contains('hidden')) {
+        cartBox.classList.remove('hidden')
+      }
+      else {
+        cartBox.classList.add('hidden')
+      }
+    })
+
+
+
+    const nonEmptyProduct = document.getElementById('non-empty-product');
+    const emptyProduct = document.getElementById('empty-product');
+
+    const addToCart = document.getElementById('add-to-cart');
+
+    addToCart.addEventListener('click', () => {
+      if (count == 0) {
+        return;
+      }
+      cartCount.classList.remove('hidden');
+      cartCount.innerHTML = count;
+      cartBox.classList.remove('hidden');
+      productModal.classList.add('hidden');
+      nonEmptyProduct.classList.remove('hidden');
+      emptyProduct.classList.add('hidden');
+      count = 0;
+      no_producct.innerHTML = count;
+    })
+
+    document.addEventListener('click', (e) => {
+
+    })
+
+    const productModal = document.getElementById('product-modal');
+    const toggleModal = document.getElementById('toggle-modal');
+    const closeProductModal = document.getElementById('close-product-modal');
+    const toggleFn = () => {
+      if (productModal.classList.contains('hidden'))
+        productModal.classList.remove('hidden');
+      else
+        productModal.classList.add('hidden');
+    }
+    toggleModal.addEventListener('click', toggleFn)
+    closeProductModal.addEventListener('click', toggleFn)
+
+
+
+
+  </script>
+
+</body>
+
+</html>

@@ -12,14 +12,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
   </style>
 </head>
 
@@ -66,12 +59,11 @@
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 
-  <!-- flex-col icin h-60 60px yerine max-content oluyor her zaman min-h mi kullanmaliyiz? -->
   <!-- min-w absolute olmayan butun parentlarin width'ini arttirir -->
-  <div class="page w-full h-[100vh] flex justify-center overflow-y-auto pt-6  max-sm:pt-0 font-regular">
+  <div class="page w-full h-[100vh]  overflow-y-auto pt-4  max-sm:pt-0 font-regular">
 
-    <div class="container max-w-[1200px]  flex flex-col max-sm:p-2">
-      <div class="sec1 nav w-full min-h-[120px] flex justify-between items-center">
+    <div class="container max-w-[1200px] m-auto  flex flex-col max-sm:p-2">
+      <div class="h-[100px] sec1 nav w-full  flex justify-between items-center">
         <div class="c1 icon">
           <img src="/assets/images/logo.svg" class="w-[50px]" alt="">
         </div>
@@ -195,8 +187,7 @@
 
 
       </div>
-
-
+      
       <div id="mobile-nav"
         class=" hidden flex mobile-nav fixed w-full h-[100vh] top-0 left-0 justify-end bg-gray-600/75">
         <img id="close-btn" src="/assets/images/icon-menu-close.svg" class="fixed top-3 right-3 bg-white cursor-pointer"
@@ -212,7 +203,7 @@
           </div>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
 
 
     <script>

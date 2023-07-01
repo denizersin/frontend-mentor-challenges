@@ -3,5 +3,5 @@
 
 
 ## 🔗 Links
-[My Profile | Challenges ](https://www.frontendmentor.io/profile/ersin-recode)
+[My Profile | Live Challenges ](https://www.frontendmentor.io/profile/ersin-recode)
 

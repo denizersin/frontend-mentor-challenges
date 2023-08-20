@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="output.css">
+  <title>Frontend Mentor | Interactive comments section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Pull dynamic content from the data.json file -->
+
+  <div class="attribution bg-gray-100 flex justify-center">
+
+
+    <div class="container w-[73rem]  max-sm:w-[400px] text-slate-700/60 text-[1.5rem]
+    flex flex-col gap-8
+    ">
+
+      <div class="comment  text-slate-700/60 rounded-xl text-[1.5rem]">
+        <div class="wrap  ">
+          <div class=" flex flex-col gap-4">
+            <div class=" py-[1.5rem] px-[2.7rem] bg-white   max-sm:py-[1rem] max-sm:px-[1.4rem] comment">
+              <div class="wrap content flex gap-[2rem]">
+                <div
+                  class="counter max-sm:hidden flex flex-col  w-[4.2rem] h-max border bg-slate-100 font-bold rounded-xl text-2xl">
+                  <div class=" py-2 pb-3 text-center hover:text-primary-purple cursor-pointer increase">+</div>
+                  <div class=" py-2 text-center  count text-primary-purple">10</div>
+                  <div class=" py-2 pt-3 text-center hover:text-primary-purple cursor-pointer decrase">-</div>
+                </div>
+                <div class="content w-full max-sm:mb-4">
+                  <div class="r r1 flex justify-between">
+                    <div class="r r1 flex gap-[1.4rem] mb-[1.4rem] items-center text-[1.5rem]">
+                      <div class="avatar w-[3rem]"> <img src="/images/avatars/image-amyrobson.png" alt=""> </div>
+                      <div class="name font-bold text-black">amyrobson</div>
+                      <div class="time">1 month ago</div>
+                    </div>
+                    <div
+                      class="r r2 max-sm:hidden flex gap-[.5rem] text-primary-purple font-bold text-[1.5rem] items-center cursor-pointer hover:opacity-50">
+                      <div class="icon"><img src="/images/icon-reply.svg" alt=""></div>
+                      <div class="text ">Reply</div>
+                    </div>
+                  </div>
+                  <div class="r r2 comment-text text-left">
+                    I've been wanting to work in Asia for the longest time, so I'm really excited about this
+                    opportunity. I've been wanting to work in Asia for the longest time, so I'm really excited about
+                    this
+                    opportunity.
+                  </div>
+                </div>
+              </div>
+              <div class="mobile hidden justify-between max-sm:flex ">
+                <div class="counter flex w-max h-auto border bg-slate-100 font-bold rounded-xl text-2xl">
+                  <div class=" px-4 py-3 text-center hover:text-primary-purple cursor-pointer increase">+</div>
+                  <div class=" px-4 py-3 text-center  count text-primary-purple ">10</div>
+                  <div class=" px-4 py-3 text-center hover:text-primary-purple cursor-pointer decrase">-</div>
+                </div>
+                <div
+                  class="r r2 flex gap-[.5rem] text-primary-purple font-bold text-[1.5rem] items-center cursor-pointer hover:opacity-50">
+                  <div class="icon"><img src="/images/icon-reply.svg" alt=""></div>
+                  <div class="text ">Reply</div>
+                </div>
+              </div>
+            </div>
+            <div class="reply">
+              <div class=" py-[1.5rem] px-[2.7rem]  bg-white rounded-xl max-sm:py-[1rem] max-sm:px-[1.4rem] 
+              flex items-start gap-[2rem] max-sm:flex-wrap max-sm:justify-between
+              ">
+                <div class="c c1 avatar w-[3rem] max-sm:order-2 border"><img src="/images/avatars/image-juliusomo.png"
+                    alt="">
+                </div>
+                <div class="c c2 add comment flex-1 max-sm:order-1 max-sm:min-w-full ">
+                  <textarea class="border w-full hover:border-primary-purple rounded-md cursor-pointer"
+                    placeholder="Add a comment" name="" id="" cols="30" rows="5"></textarea>
+                </div>
+                <div
+                  class="c c3 send px-[2.5rem] py-[1.2rem] max-sm:order-3 bg-primary-purple text-white rounded-2xl text-2xl font-semibold hover:opacity-50 cursor-pointer ">
+                  REPLY
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="comment  text-slate-700/60 bg-white rounded-xl text-[1.5rem]">
+        <div class="w-full py-[1.5rem] px-[2.7rem]  max-sm:py-[1rem] max-sm:px-[1.4rem] ">
+          <div class="w-full flex flex-col">
+
+            <div class="w-full r1 comment">
+              <div class="w-full content flex gap-[2rem]">
+                <div
+                  class="counter max-sm:hidden flex flex-col  w-[4.2rem] h-max border bg-slate-100 font-bold rounded-xl text-2xl">
+                  <div class=" py-2 pb-3 text-center hover:text-primary-purple cursor-pointer increase">+</div>
+                  <div class=" py-2 text-center  count text-primary-purple">10</div>
+                  <div class=" py-2 pt-3 text-center hover:text-primary-purple cursor-pointer decrase">-</div>
+                </div>
+                <div class="content w-full max-sm:mb-4">
+                  <div class="r r1 flex justify-between">
+                    <div class="r r1 flex gap-[1.4rem] mb-[1.4rem] items-center text-[1.5rem]">
+                      <div class="avatar w-[3rem]"> <img src="/images/avatars/image-amyrobson.png" alt=""> </div>
+                      <div class="name font-bold text-black">amyrobson</div>
+                      <div class="time">1 month ago</div>
+                    </div>
+                    <div
+                      class="r r2 max-sm:hidden flex gap-[.5rem] text-primary-purple font-bold text-[1.5rem] items-center cursor-pointer hover:opacity-50">
+                      <div class="icon"><img src="/images/icon-reply.svg" alt=""></div>
+                      <div class="text ">Reply</div>
+                    </div>
+                  </div>
+                  <div class="r r2 comment-text text-left">
+                    I've been wanting to work in Asia for the longest time, so I'm really excited about this
+                    opportunity. I've been wanting to work in Asia for the longest time, so I'm really excited about
+                    this
+                    opportunity.
+                  </div>
+                </div>
+              </div>
+              <div class="mobile hidden justify-between max-sm:flex ">
+                <div class="counter flex w-max h-auto border bg-slate-100 font-bold rounded-xl text-2xl">
+                  <div class=" px-4 py-3 text-center hover:text-primary-purple cursor-pointer increase">+</div>
+                  <div class=" px-4 py-3 text-center  count text-primary-purple ">10</div>
+                  <div class=" px-4 py-3 text-center hover:text-primary-purple cursor-pointer decrase">-</div>
+                </div>
+                <div
+                  class="r r2 flex gap-[.5rem] text-primary-purple font-bold text-[1.5rem] items-center cursor-pointer hover:opacity-50">
+                  <div class="icon"><img src="/images/icon-reply.svg" alt=""></div>
+                  <div class="text ">Reply</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="r2 replies">
+        <div class="w-full flex">
+          <div class="c c1  w-[9rem] max-sm:w-[2rem] shrink-0 justify-center flex">
+
+            <div class="line w-[2px] bg-gray-200 "></div>
+          </div>
+          <div class="c c2 replies flex flex-col gap-4">
+
+
+            <div class="comment  text-slate-700/60 bg-white rounded-xl text-[1.5rem]">
+              <div class="w-full py-[1.5rem] px-[2.7rem]  max-sm:py-[1rem] max-sm:px-[1.4rem] ">
+                <div class="w-full flex flex-col">
+
+                  <div class="w-full r1 comment">
+                    <div class="w-full content flex gap-[2rem]">
+                      <div
+                        class="counter max-sm:hidden flex flex-col  w-[4.2rem] h-max border bg-slate-100 font-bold rounded-xl text-2xl">
+                        <div class=" py-2 pb-3 text-center hover:text-primary-purple cursor-pointer increase">+</div>
+                        <div class=" py-2 text-center  count text-primary-purple">10</div>
+                        <div class=" py-2 pt-3 text-center hover:text-primary-purple cursor-pointer decrase">-</div>
+                      </div>
+                      <div class="content w-full max-sm:mb-4">
+                        <div class="r r1 flex justify-between">
+                          <div class="r r1 flex gap-[1.4rem] mb-[1.4rem] items-center text-[1.5rem]">
+                            <div class="avatar w-[3rem]"> <img src="/images/avatars/image-amyrobson.png" alt=""> </div>
+                            <div class="name font-bold text-black">amyrobson</div>
+                            <div class="time">1 month ago</div>
+                          </div>
+                          <div
+                            class="r r2 max-sm:hidden flex gap-[.5rem] text-primary-purple font-bold text-[1.5rem] items-center cursor-pointer hover:opacity-50">
+                            <div class="icon"><img src="/images/icon-reply.svg" alt=""></div>
+                            <div class="text ">Reply</div>
+                          </div>
+                        </div>
+                        <div class="r r2 comment-text text-left">
+                          I've been wanting to work in Asia for the longest time, so I'm really excited about this
+                          opportunity. I've been wanting to work in Asia for the longest time, so I'm really excited
+                          about
+                          this
+                          opportunity.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mobile hidden justify-between max-sm:flex ">
+                      <div class="counter flex w-max h-auto border bg-slate-100 font-bold rounded-xl text-2xl">
+                        <div class=" px-4 py-3 text-center hover:text-primary-purple cursor-pointer increase">+</div>
+                        <div class=" px-4 py-3 text-center  count text-primary-purple ">10</div>
+                        <div class=" px-4 py-3 text-center hover:text-primary-purple cursor-pointer decrase">-</div>
+                      </div>
+                      <div
+                        class="r r2 flex gap-[.5rem] text-primary-purple font-bold text-[1.5rem] items-center cursor-pointer hover:opacity-50">
+                        <div class="icon"><img src="/images/icon-reply.svg" alt=""></div>
+                        <div class="text ">Reply</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="comment  text-slate-700/60 bg-white rounded-xl text-[1.5rem]">
+              <div class="wrap py-[1.5rem] px-[2.7rem]  max-sm:py-[1rem] max-sm:px-[1.4rem] ">
+                <div class="wrap flex flex-col">
+                  <div class="wrap content flex gap-[2rem]">
+                    <div
+                      class="counter max-sm:hidden flex flex-col  w-[4.2rem] h-max border bg-slate-100 font-bold rounded-xl text-2xl">
+                      <div class=" py-2 pb-3 text-center hover:text-primary-purple cursor-pointer increase">+</div>
+                      <div class=" py-2 text-center  count text-primary-purple">10</div>
+                      <div class=" py-2 pt-3 text-center hover:text-primary-purple cursor-pointer decrase">-</div>
+                    </div>
+                    <div class="content w-full max-sm:mb-4">
+                      <div class="r r1 flex justify-between">
+                        <div class="r r1 flex gap-[1.4rem] mb-[1.4rem] items-center text-[1.5rem]">
+                          <div class="avatar w-[3rem]"> <img src="/images/avatars/image-amyrobson.png" alt=""> </div>
+                          <div class="name font-bold text-black">amyrobson</div>
+                          <div class="bg-primary-purple text-white px-2 text-[1rem]">you</div>
+                          <div class="time">1 month ago</div>
+                        </div>
+                        <div class="r r2 max-sm:hidden flex gap-[2rem] font-bold text-[1.5rem] items-center">
+                          <div class="delete-btn flex items-center gap-3 hover:opacity-50 cursor-pointer">
+                            <div class="icon"><img src="/images/icon-delete.svg" alt=""></div>
+                            <div class="text">Delete</div>
+                          </div>
+                          <div class="edit flex items-center gap-3 hover:opacity-50 cursor-pointer">
+                            <div class="icon"><img src="/images/icon-edit.svg" alt=""></div>
+                            <div class="text">Edit</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="r r2 comment-text text-left">
+                        I've been wanting to work in Asia for the longest time, so I'm really excited about this
+                        opportunity. I've been wanting to work in Asia for the longest time, so I'm really excited about
+                        this
+                        opportunity.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mobile hidden justify-between max-sm:flex ">
+                    <div class="counter flex w-max h-auto border bg-slate-100 font-bold rounded-xl text-2xl">
+                      <div class=" px-4 py-3 text-center hover:text-primary-purple cursor-pointer increase">+</div>
+                      <div class=" px-4 py-3 text-center  count text-primary-purple ">10</div>
+                      <div class=" px-4 py-3 text-center hover:text-primary-purple cursor-pointer decrase">-</div>
+                    </div>
+                    <div class="r r2 flex gap-[2rem] font-bold text-[1.5rem] items-center">
+                      <div class="delete-btn flex items-center gap-3 hover:opacity-50 cursor-pointer">
+                        <div class="icon"><img src="/images/icon-delete.svg" alt=""></div>
+                        <div class="text">Delete</div>
+                      </div>
+                      <div class="edit flex items-center gap-3 hover:opacity-50 cursor-pointer">
+                        <div class="icon"><img src="/images/icon-edit.svg" alt=""></div>
+                        <div class="text">Edit</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="comment  text-slate-700/60 bg-white rounded-xl text-[1.5rem]">
+        <div class="wrap py-[1.5rem] px-[2.7rem]  max-sm:py-[1rem] max-sm:px-[1.4rem] ">
+          <div class="wrap flex flex-col">
+            <div class="wrap content flex gap-[2rem]">
+              <div
+                class="counter max-sm:hidden flex flex-col  w-[4.2rem] h-max border bg-slate-100 font-bold rounded-xl text-2xl">
+                <div class=" py-2 pb-3 text-center hover:text-primary-purple cursor-pointer increase">+</div>
+                <div class=" py-2 text-center  count text-primary-purple">10</div>
+                <div class=" py-2 pt-3 text-center hover:text-primary-purple cursor-pointer decrase">-</div>
+              </div>
+              <div class="content w-full max-sm:mb-4">
+                <div class="r r1 flex justify-between">
+                  <div class="r r1 flex gap-[1.4rem] mb-[1.4rem] items-center text-[1.5rem]">
+                    <div class="avatar w-[3rem]"> <img src="/images/avatars/image-amyrobson.png" alt=""> </div>
+                    <div class="name font-bold text-black">amyrobson</div>
+                    <div class="bg-primary-purple text-white px-2 text-[1rem]">you</div>
+                    <div class="time">1 month ago</div>
+                  </div>
+                  <div class="r r2 max-sm:hidden flex gap-[2rem] font-bold text-[1.5rem] items-center">
+                    <div class="delete-btn flex items-center gap-3 hover:opacity-50 cursor-pointer">
+                      <div class="icon"><img src="/images/icon-delete.svg" alt=""></div>
+                      <div class="text">Delete</div>
+                    </div>
+                    <div class="edit flex items-center gap-3 hover:opacity-50 cursor-pointer">
+                      <div class="icon"><img src="/images/icon-edit.svg" alt=""></div>
+                      <div class="text">Edit</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="r r2 comment-text text-left">
+                  I've been wanting to work in Asia for the longest time, so I'm really excited about this
+                  opportunity. I've been wanting to work in Asia for the longest time, so I'm really excited about this
+                  opportunity.
+                </div>
+              </div>
+            </div>
+            <div class="mobile hidden justify-between max-sm:flex ">
+              <div class="counter flex w-max h-auto border bg-slate-100 font-bold rounded-xl text-2xl">
+                <div class=" px-4 py-3 text-center hover:text-primary-purple cursor-pointer increase">+</div>
+                <div class=" px-4 py-3 text-center  count text-primary-purple ">10</div>
+                <div class=" px-4 py-3 text-center hover:text-primary-purple cursor-pointer decrase">-</div>
+              </div>
+              <div class="r r2 flex gap-[2rem] font-bold text-[1.5rem] items-center">
+                <div class="delete-btn flex items-center gap-3 hover:opacity-50 cursor-pointer">
+                  <div class="icon"><img src="/images/icon-delete.svg" alt=""></div>
+                  <div class="text">Delete</div>
+                </div>
+                <div class="edit flex items-center gap-3 hover:opacity-50 cursor-pointer">
+                  <div class="icon"><img src="/images/icon-edit.svg" alt=""></div>
+                  <div class="text">Edit</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="add-comment">
+        <div class="wrap py-[1.5rem] px-[2.7rem] bg-white rounded-xl max-sm:py-[1rem] max-sm:px-[1.4rem] 
+        flex items-start gap-[2rem] max-sm:flex-wrap max-sm:justify-between
+        ">
+          <div class="c c1 avatar w-[3rem] max-sm:order-2 border"><img src="/images/avatars/image-juliusomo.png" alt="">
+          </div>
+          <div class="c c2 add comment flex-1 max-sm:order-1 max-sm:min-w-full ">
+            <textarea class="border w-full hover:border-primary-purple rounded-md cursor-pointer"
+              placeholder="Add a comment" name="" id="" cols="30" rows="5"></textarea>
+          </div>
+          <div
+            class="c c3 send px-[2.5rem] py-[1.2rem] max-sm:order-3 bg-primary-purple text-white rounded-2xl text-2xl font-semibold hover:opacity-50 cursor-pointer ">
+            SEND
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div id="modal" class="modal fixed left-0 top-0 bg-gray-300/70 flex justify-center items-center w-full h-screen">
+        <div class="content w-[30rem] p-8 bg-white flex flex-col gap-6 rounded-lg">
+          <div class="text-4xl font-semibold text-left text-slate-700">Delete comment</div>
+          <div class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima maxime, quam neque
+            corporis voluptatum distinctio dolore quidem unde laudantium quod.</div>
+          <div class="actions text-white text-left text-xl flex gap-4">
+            <button class="cancel hover:opacity-50 rounded-lg px-6 py-3 bg-slate-600">NO, CANCEL</button>
+            <button class="delete hover:opacity-50 rounded-lg px-6 py-3 bg-primary-danger">YES, DELETE</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+  </div>
+
+  <script>
+
+    const modalElem = document.getElementById('modal')
+    document.querySelectorAll('.delete-btn').forEach(elem => {
+      elem.addEventListener('click', () => {
+        modalElem.classList.add('active');
+      })
+    });
+
+    modalElem.addEventListener('click', (e) => {
+      if (e.target.classList.contains('modal')) {
+        modalElem.classList.remove('active');
+      }
+    })
+  </script>
+</body>
+
+</html>
